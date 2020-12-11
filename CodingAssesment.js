@@ -13,7 +13,6 @@ async function downloader () {
                 let url = `${element.avatar_url}`
                 let path = Path.resolve(__dirname, 'images', `${element.login}.jpeg`)
                 const writer = Fs.createWriteStream(path)
-    
                 const response = await Axios({
                     url,
                     method: 'GET',
