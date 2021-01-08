@@ -55,31 +55,38 @@
 # else:
 #     print(f'You are {int(Weight)*2.25} Pounds')
 'Car Game'
-value = ''
-temp = ''
-while value != 'quit':
-    value = input('> ').lower()
-    if value == 'start':
-        if temp == value:
-            print('THE CAR IS ALREADY STARTED, WHAT ARE YOU DOING!!!?????')
-        else:
-            print('The car has started... Ready to go!!')
-            temp = value
-    elif value == 'stop':
-        if temp == 'stop':
-            print('THE CAR IS ALREADY STOPPED WHAT ARE YOU DOING!!!???')
-        else:
-            print('The car has stopped.')
-            temp = value
-    elif value == 'help':
-        print('''
-        start - to start the car
-        stop - to stop the car
-        quit - to exit
-        ''')
-    elif value == 'quit':
-        break
-    else:
-        print('I dont understand that... try typing "help" if unsure')
+# value = ''
+# temp = ''
+# while value != 'quit':
+#     value = input('> ').lower()
+#     if value == 'start':
+#         if temp == value:
+#             print('THE CAR IS ALREADY STARTED, WHAT ARE YOU DOING!!!?????')
+#         else:
+#             print('The car has started... Ready to go!!')
+#             temp = value
+#     elif value == 'stop':
+#         if temp == 'stop':
+#             print('THE CAR IS ALREADY STOPPED WHAT ARE YOU DOING!!!???')
+#         else:
+#             print('The car has stopped.')
+#             temp = value
+#     elif value == 'help':
+#         print('''
+#         start - to start the car
+#         stop - to stop the car
+#         quit - to exit
+#         ''')
+#     elif value == 'quit':
+#         break
+#     else:
+#         print('I dont understand that... try typing "help" if unsure')
+#############################
+'For Loops'
+prices = [10,20,30,80,90]
+total = 0
+for item in prices:
+    total+=item
+print(total)
 print('hey')
 
