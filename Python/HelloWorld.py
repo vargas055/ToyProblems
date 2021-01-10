@@ -83,10 +83,26 @@
 #         print('I dont understand that... try typing "help" if unsure')
 #############################
 'For Loops'
-prices = [10,20,30,80,90]
-total = 0
-for item in prices:
-    total+=item
-print(total)
+# prices = [10,20,30,80,90]
+# total = 0
+# for item in prices:
+#     total+=item
+# print(total)
+# numbers = [5,2,5,2,2]
+# for number in numbers:                 ###for number in numbers:
+#     string=''                          ###  print(x*number)
+#     for count in range(number):        ###
+#         string+='x'
+#     print(string)
+############################
+'Lists'
+nums = [1,2,3,5,8,7,6,8,7,5,468,4]
+largest = nums[0]
+for num in nums:
+    if num > largest:
+        largest = num
+print(largest)
+
+
 print('hey')
 
