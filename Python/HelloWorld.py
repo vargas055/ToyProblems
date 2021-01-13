@@ -108,23 +108,35 @@
 #         singles.insert(0,number)
 # print(singles)
 'Objects/Dictinonaries'
-phone = input('Phone: ')
-nums = {
-    '0':'zero',
-    '1':'one',
-    '2':'two',
-    '3':'three',
-    '4':'four',
-    '5':'five',
-    '6':'six',
-    '7':'seven',
-    '8':'eight',
-    '9':'nine'
-}
-solution = ''
-for num in phone:
-    solution += nums[num] + ' '
+# phone = input('Phone: ')
+# nums = {
+#     '0':'zero',
+#     '1':'one',
+#     '2':'two',
+#     '3':'three',
+#     '4':'four',
+#     '5':'five',
+#     '6':'six',
+#     '7':'seven',
+#     '8':'eight',
+#     '9':'nine'
+# }
+# solution = ''
+# for num in phone:
+#     solution += nums[num] + ' '
 
-print(solution)
-print('hey')
+# print(solution)
+message = input('>')
+def emojicon(message):
+    words = message.split(' ')
+    emojis = {
+        ':)': '😀',
+        ':(': '🙁'
+    }
+    output= ''
+    for word in words:
+        output += emojis.get(word, word) + ' '
+    return output
+
+print(emojicon(message))
 
