@@ -96,18 +96,35 @@
 #     print(string)
 ############################
 'Lists'
-nums = [1,2,3,5,8,7,6,8,7,5,468,4]
-# largest = nums[0]
-# for num in nums:
-#     if num > largest:
-#         largest = num
-# print(largest)
-singles = []
-for number in nums:
-    if number not in singles:
-        singles.insert(0,number)
-print(singles)
+# nums = [1,2,3,5,8,7,6,8,7,5,468,4]
+# # largest = nums[0]
+# # for num in nums:
+# #     if num > largest:
+# #         largest = num
+# # print(largest)
+# singles = []
+# for number in nums:
+#     if number not in singles:
+#         singles.insert(0,number)
+# print(singles)
+'Objects/Dictinonaries'
+phone = input('Phone: ')
+nums = {
+    '0':'zero',
+    '1':'one',
+    '2':'two',
+    '3':'three',
+    '4':'four',
+    '5':'five',
+    '6':'six',
+    '7':'seven',
+    '8':'eight',
+    '9':'nine'
+}
+solution = ''
+for num in phone:
+    solution += nums[num] + ' '
 
-
+print(solution)
 print('hey')
 
