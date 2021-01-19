@@ -16,5 +16,5 @@ x = 4;
 console.log(fn(Math.random() * 10));
 console.log(fn(0 * 10));
 console.log(fn(0.99999999 * 10));
-debugger
+ debugger
 console.log('hey')
