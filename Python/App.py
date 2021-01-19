@@ -12,16 +12,25 @@
 # print('hello')
 
 
-'Modules'
-'''random'''
-import random
+# 'Modules'
+# '''random'''
+# import random
 
-# # for i in range(3):
-# #   print(random.randint(10, 20))
-# members = ['Jhon', 'Mary', 'Bob', 'Mosh']
-# leader = random.choice(members)
-# print(leader)
-from Utils import roll
-print(roll(random.randint(1,6),random.randint(1,6)))
+# # # for i in range(3):
+# # #   print(random.randint(10, 20))
+# # members = ['Jhon', 'Mary', 'Bob', 'Mosh']
+# # leader = random.choice(members)
+# # print(leader)
+# from Utils import roll
+# print(roll(random.randint(1,6),random.randint(1,6)))
+
+from pathlib import Path
+
+
+path = Path()
+# print(path.rmdir()) ## you can make and delete directories and files using these methods
+for file in path.glob('*'):
+    print(f'File name is {file}')
+
 
 print('hey')
